@@ -13,13 +13,10 @@
         <img src="./assets/images/game-image.jpg" alt="body of work" id="header-bg">
         <nav>
             <ul>
-                <li>In Development</li>
-                <li>Graphics</li>
-                <li>Illustrations</li>
-                <li>3D Models</li>
-                <li>Animation</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#web-development" class="active">Web Projects</a></li>
+                <!-- <li><a>Graphics/Illustration Portfolio</a></li>  implemented later --> 
+                <li><a href="#about-me" class="active">About</a></li>
+                <li><a href="#contact-page" class="active">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -30,62 +27,56 @@
         <p class="para-style">My name is Arkaw Banerjee. I am a budding full-stack developer. I have been a graphic designer for 7 years and now have developer experience to round out my toolkit. I also do cute illustrations like the character in my banner.</p>
     </section>
 
+    <!-- Web Project Portfolio -->
+
     <section id="web-development" class="content-containers">
         <h2>Web Projects</h2>
         <div id="wd-thumbs-container">
-            <div class="wd-thumbs">
-                <div class="thumb-caption">
+            
+            <div class="wd-thumbs" id="main-app">
+                <div class="thumb-caption" style="margin-top: 325px;">
                     Debug Site
                 </div>
-                <img src="./assets/images/debug-image.jpg" alt="workload planner" class="containerImages">
+                <a href="https://rafflafressia.github.io/week-1-assignment/"><img src="./assets/images/debug-image.jpg" alt="workload planner" class="containerImages"></a>
             </div>
+
             <div class="wd-thumbs">
                 <div class="thumb-caption">
                     Javascript Quiz
                 </div>
-                <img src="./assets/images/quiz-image.jpg" alt="workload planner" class="containerImages">
+                <a href="https://rafflafressia.github.io/javascript-knowledge-quiz/"><img src="./assets/images/quiz-image.jpg" alt="workload planner" class="containerImages"></a>
             </div>
+
             <div class="wd-thumbs">
                 <div class="thumb-caption">
                     Password Generator
                 </div>
-                <img src="./assets/images/rng-image.jpg" alt="workload planner" class="containerImages">
+                <a href="https://rafflafressia.github.io/random-password-generator/"><img src="./assets/images/rng-image.jpg" alt="workload planner" class="containerImages"></a>
             </div>
+
             <div class="wd-thumbs">
                 <div class="thumb-caption">Workload Planner</div>
+                <a href="https://rafflafressia.github.io/workload-planner/"><img src="./assets/images/planner-img.png" alt="workload planner" class="containerImages"></a>
+            </div>
+
+            <div class="wd-thumbs">
+                <div class="thumb-caption">Weather App - In Development</div>
                 <img src="./assets/images/planner-img.png" alt="workload planner" class="containerImages">
             </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact-page" class="content-containers">
+        <h2>Contact Me</h2>
+        <div id="wd-thumbs-container" style="justify-content: left; align-items: center; padding: 0px 50px;">
+           <p class="para-style">Phone Number: 666-666-6666</p>
+           <p class="para-style">Email Address: placeholder@email.com</p>
         </div>
     </section>
 
-    <section id="graphic-design" class="content-containers">
-        <h2>Graphic Design</h2>
-        <div id="wd-thumbs-container">
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-        </div>
-    </section>
-
-    <section id="3d-models" class="content-containers">
-        <h2>3D Models</h2>
-        <div id="wd-thumbs-container">
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-        </div>
-    </section>
-
-    <section id="illustrations" class="content-containers">
-        <h2>Art Work</h2>
-        <div id="wd-thumbs-container">
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-            <div class="wd-thumbs"></div>
-        </div>
-    </section>
 </body>
 </html>

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin:auto;
     padding: 0;
@@ -17,7 +21,6 @@ h1 {
     font-size: 75px;
 }
 
-
 header {
     margin: auto;
     padding: 0;
@@ -36,7 +39,8 @@ ul {
   background-color: #201e1e;
 }
 
-li {
+li a {
+    text-decoration: none;
     display: inline;
     list-style: none;
     margin: 0;
@@ -47,7 +51,11 @@ li {
     border-right: 1px solid whitesmoke;
 }
 
-li:nth-child(6), li:last-child {
+li a:hover {
+    background-color:seagreen;
+}
+
+li:nth-child(3), li:last-child {
     float: right;
     border-right: none;
     border-left: 1px solid whitesmoke;
@@ -85,11 +93,16 @@ h2 {
     height: 100%;
 }
 
+#main-app {
+    width: 95%; 
+    height:400px;
+}
+
 #wd-thumbs-container {
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     border-left: 1px solid white;
     margin: auto;
@@ -101,6 +114,12 @@ h2 {
     width: 400px;
     height: 200px;
     margin: 20px;
+    flex-direction: column;
+}
+
+.wd-thumbs:hover {
+    transition: 0.1s;
+    border: 5px solid cadetblue;
 }
 
 /* styling for thumbnail titles */
@@ -112,4 +131,50 @@ h2 {
     width:auto;
     position: absolute;
     z-index: 1;
+}
+
+
+/* Using Mobile First to make responsive website using web queries */
+@media screen and (max-width:992px) {
+    h1{
+        font-size:50px;
+        width: 50%;
+        transition: 0.1s;
+    }
+    h2{
+        font-size:40px;
+        transition:0.1s;
+    }
+    .para-style{
+        font-size: 20px;
+        transition:0.1s;
+    }
+    .wd-thumbs{
+        width:600px;
+    }
+
+    .thumb-caption{
+        width:25%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    h1{
+        font-size:25px;
+        width:25%;
+    }
+    h2 {
+        font-size:30px; 
+    }
+    .para-style{
+        font-size:15px;
+    }
+
+    .wd-thumbs{
+        width:250px; 
+    }
+    .thumb-caption{
+        width:10%;
+        font-size:9px;
+    }
 }
